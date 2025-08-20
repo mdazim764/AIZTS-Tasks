@@ -6,6 +6,8 @@ import Product from './Components/Product';
 import DriveValidation from './Components/DriveValidation';
 import Laptop from './Components/Laptop';
 import Events from './Components/Events';
+import Counter from './Components/Counter';
+import ShowProduct from './Components/ShowProduct';
 
 const App = () => {
   console.log('App component rendered');
@@ -38,7 +40,15 @@ const App = () => {
 </div>
 
 <div>
-  <Events />
+  {/* <Events /> */}
+</div>
+
+<div>
+  {/* <Counter /> */}
+</div>
+
+<div>
+  <ShowProduct />
 </div>
 
     </>
