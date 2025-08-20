@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Product(props) {
+function Product({name, brand, price}) {
   return (
     <div>
-      <h2>{props.name}</h2>
-      <p>Brand: {props.brand}</p>
-      <p>Price: ${props.price}</p>
+      <h2>{name}</h2>
+      <p>Brand: {brand}</p>
+      <p>Price: ${price}</p>
     </div>
   );
 }
