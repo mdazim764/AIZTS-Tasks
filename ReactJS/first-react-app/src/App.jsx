@@ -5,6 +5,7 @@ import { Test } from './Components/Test';
 import Product from './Components/Product';
 import DriveValidation from './Components/DriveValidation';
 import Laptop from './Components/Laptop';
+import Events from './Components/Events';
 
 const App = () => {
   console.log('App component rendered');
@@ -31,9 +32,13 @@ const App = () => {
 </div>
 
 <div>
-  <Laptop brand="Dell" model="XPS 13" price={999} />
+  {/* <Laptop brand="Dell" model="XPS 13" price={999} />
   <Laptop brand="Apple" model="MacBook Pro" price={1999} />
-  <Laptop brand="HP" model="Spectre x360" price={1299} />
+  <Laptop brand="HP" model="Spectre x360" price={1299} /> */}
+</div>
+
+<div>
+  <Events />
 </div>
 
     </>
