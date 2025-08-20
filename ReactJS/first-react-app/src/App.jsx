@@ -8,6 +8,7 @@ import Laptop from './Components/Laptop';
 import Events from './Components/Events';
 import Counter from './Components/Counter';
 import ShowProduct from './Components/ShowProduct';
+import FilterProduct from './Components/FilterProduct';
 
 const App = () => {
   console.log('App component rendered');
@@ -48,7 +49,11 @@ const App = () => {
 </div>
 
 <div>
-  <ShowProduct />
+  {/* <ShowProduct /> */}
+</div>
+
+<div>
+  <FilterProduct />
 </div>
 
     </>
