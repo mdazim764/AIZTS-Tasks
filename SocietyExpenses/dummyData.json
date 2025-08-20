@@ -1,0 +1,13 @@
+{
+  "currentAccountBalance": 200,
+  "date": "2025-07-13",
+  "expenses": [
+    { "id": "1", "name": "Watchman (Day)", "amount": 10 },
+    { "id": "2", "name": "Watchman (Night)", "amount": 10 },
+    { "id": "3", "name": "Sweeper", "amount": 10 },
+    { "id": "4", "name": "Lift Bill", "amount": 20 },
+    { "id": "5", "name": "Borewell Repair", "amount": 20 },
+    { "id": "6", "name": "Extra Expense", "amount": 10 }
+  ],
+  "fd": 600
+}
