@@ -9,6 +9,8 @@ import Events from './Components/Events';
 import Counter from './Components/Counter';
 import ShowProduct from './Components/ShowProduct';
 import FilterProduct from './Components/FilterProduct';
+import UseEffectExample from './Components/UseEffectEx';
+import Fetch_Data_from_Api from './Components/Fetch_Data_from_Api';
 
 const App = () => {
   console.log('App component rendered');
@@ -53,7 +55,15 @@ const App = () => {
 </div>
 
 <div>
-  <FilterProduct />
+  {/* <FilterProduct /> */}
+</div>
+
+<div>
+  {/* <UseEffectExample /> */}
+</div>
+
+<div>
+  <Fetch_Data_from_Api />
 </div>
 
     </>
