@@ -25,6 +25,7 @@ import Dashboard from './pages/Dashboard';
 import {BrowserRouter as Router, Routes,Route} from "react-router-dom";
 import IndianGov from './Home/IndianGov'
 import MoneyContext from './context/MoneyContext';
+import MoneyState from './context/MoneyState';
 const App = () => {
   console.log('App component rendered');
   const money = 1000;
@@ -90,7 +91,7 @@ const App = () => {
 <div>
   {/* <Meal /> */}
 </div>
-<MoneyContext.Provider value={money}>
+<MoneyState value={money}>
 <Router>
 <NavBar />
   <Routes>
@@ -108,7 +109,7 @@ const App = () => {
    
   </Routes>
 </Router>
- </MoneyContext.Provider>
+ </MoneyState>
 
     </>
   );
