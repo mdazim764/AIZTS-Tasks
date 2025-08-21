@@ -14,3 +14,25 @@
 }
 
 
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px; 
+}
+
+.label input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.label input:focus {
+  border-color: #61dafb;
+  outline: none;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #61dafb;
+}

@@ -11,6 +11,7 @@ import ShowProduct from './Components/ShowProduct';
 import FilterProduct from './Components/FilterProduct';
 import UseEffectExample from './Components/UseEffectEx';
 import Fetch_Data_from_Api from './Components/Fetch_Data_from_Api';
+import Form from './Components/Form';
 
 const App = () => {
   console.log('App component rendered');
@@ -63,7 +64,11 @@ const App = () => {
 </div>
 
 <div>
-  <Fetch_Data_from_Api />
+  {/* <Fetch_Data_from_Api /> */}
+</div>
+
+<div>
+  <Form />
 </div>
 
     </>
