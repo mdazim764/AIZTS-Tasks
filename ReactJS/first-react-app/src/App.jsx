@@ -12,6 +12,8 @@ import FilterProduct from './Components/FilterProduct';
 import UseEffectExample from './Components/UseEffectEx';
 import Fetch_Data_from_Api from './Components/Fetch_Data_from_Api';
 import Form from './Components/Form';
+import Multiple_Input_Handling from './Components/Multiple_Input_Handling';
+import Meal from './Food_Recipe/Meal';
 
 const App = () => {
   console.log('App component rendered');
@@ -68,7 +70,14 @@ const App = () => {
 </div>
 
 <div>
-  <Form />
+  {/* <Form /> */}
+</div>
+
+<div>
+  {/* <Multiple_Input_Handling /> */}
+</div>
+<div>
+  <Meal />
 </div>
 
     </>
