@@ -20,11 +20,14 @@ import Contacts from './pages/Contacts';
 import Team from './pages/Team';
 import Product from './pages/product';
 import Product_Details from './pages/Product_Details';
-
+import NavBar from './Components/NavBar';
+import Dashboard from './pages/Dashboard';
 import {BrowserRouter as Router, Routes,Route} from "react-router-dom";
-
+import IndianGov from './Home/IndianGov'
+import MoneyContext from './context/MoneyContext';
 const App = () => {
   console.log('App component rendered');
+  const money = 1000;
  
   return (
     <>
@@ -87,17 +90,25 @@ const App = () => {
 <div>
   {/* <Meal /> */}
 </div>
+<MoneyContext.Provider value={money}>
 <Router>
+<NavBar />
   <Routes>
-    <Route path="/" element={<Home />} />
+    
+    {/* <Route path="/" element={<Home />} /> */}
+    <Route path="/" element={<IndianGov money={money} />} />
     <Route path="/about" element={<About />} />
     <Route path="/contacts" element={<Contacts />} />
     <Route path="/team" element={<Team />} />
     <Route path="/product" element={<Product />} />
     <Route path="/meal" element={<Meal />} />
     <Route path="/product/:id" element={<Product_Details />} />
+    <Route path="/dashboard" element={<Dashboard />} />
+    {/* Add more routes as needed */}
+   
   </Routes>
 </Router>
+ </MoneyContext.Provider>
 
     </>
   );
