@@ -2,7 +2,7 @@ import React from 'react';
 import Person from './Person';
 import Cat from './Cat';
 import { Test } from './Components/Test';
-import Product from './Components/Product';
+// import Product from './Components/Product';
 import DriveValidation from './Components/DriveValidation';
 import Laptop from './Components/Laptop';
 import Events from './Components/Events';
@@ -14,6 +14,14 @@ import Fetch_Data_from_Api from './Components/Fetch_Data_from_Api';
 import Form from './Components/Form';
 import Multiple_Input_Handling from './Components/Multiple_Input_Handling';
 import Meal from './Food_Recipe/Meal';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contacts from './pages/Contacts';
+import Team from './pages/Team';
+import Product from './pages/product';
+import Product_Details from './pages/Product_Details';
+
+import {BrowserRouter as Router, Routes,Route} from "react-router-dom";
 
 const App = () => {
   console.log('App component rendered');
@@ -77,8 +85,19 @@ const App = () => {
   {/* <Multiple_Input_Handling /> */}
 </div>
 <div>
-  <Meal />
+  {/* <Meal /> */}
 </div>
+<Router>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+    <Route path="/contacts" element={<Contacts />} />
+    <Route path="/team" element={<Team />} />
+    <Route path="/product" element={<Product />} />
+    <Route path="/meal" element={<Meal />} />
+    <Route path="/product/:id" element={<Product_Details />} />
+  </Routes>
+</Router>
 
     </>
   );

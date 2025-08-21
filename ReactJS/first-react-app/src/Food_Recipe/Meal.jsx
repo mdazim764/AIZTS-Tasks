@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import "./meal.css"; // Assuming you have a CSS file for styling
 const Meal = () => {
   const [meals, setMeals] = useState([]);
   const [area, setArea] = useState("indian");
